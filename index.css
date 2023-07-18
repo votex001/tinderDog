@@ -1,0 +1,93 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 5vh auto;
+    border: 5px solid black;
+    height: 90vh;
+    width: 30vw;
+    border-radius: 2%;
+}
+/* logo place */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 2vh;
+}
+.header-icons{
+    height: 3vh;
+    min-height: 26px;
+}
+
+/* content photo + information */
+
+.content{
+    min-height: 67vh;
+    background-size: cover;
+    margin: 0 2vh;
+    border-radius: 2%;
+    color: white;
+    
+}
+#like-div{
+    min-height: 56vh;
+    padding-top: 80px;
+    transform: scale(0);
+    transition: 0.5s all;
+}
+#like-div.active{
+    transform: scale(1);
+    transition: 0.5s all;
+}
+.enjoy{
+    position: absolute;
+    top: 10vh;
+    left: 2vh;
+    transform: rotate(-45deg);
+
+    height: 15vh;
+    width: 15vw;
+    object-fit: contain;
+}
+.dog-info{
+    display: block;
+    margin-left: 1vw;
+    text-shadow: 1px 1px 5px black;
+}
+h1{
+    margin: 0;
+}
+p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0;
+}
+/* like / dislike */
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 40px;
+    border: none;
+} 
+button img{
+    height: 50px;
+    width: 50px;
+}
+button img:hover{
+        height: 60px;
+        width: 60px;
+}
+
